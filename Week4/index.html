@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl Talk</title>
+
+    <style>
+
+        * {
+            font-size: 16px;
+        }
+
+        body {
+            background-color: #FCE4EC;
+            color: #49383D;
+        }
+
+        /* NAVIGATION BAR */
+
+        .sampleNav {
+            background-color: #EFB8C8;
+            color: #49383D;
+            font-size: 1.2rem;
+            width: 100vw;
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-sizing: border-box;
+
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+
+        .sampleNav > button {
+            background-color: #FFF8F5;
+            color: #9B526A;
+            border: 2px solid #F4BFD0;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+
+            font-family: cursive;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* WELCOME SECTION */
+
+        .welcome {
+            text-align: center;
+            padding: 100px 20px 40px;
+        }
+
+        .welcome h1 {
+            font-size: 4rem;
+            color: #9B526A;
+        }
+
+        .welcome p {
+            font-size: 1.2rem;
+            color: #ad6279;
+        }
+
+        /* MAIN GRID */
+
+        .cards {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+        }
+
+        .cards > div {
+            background-color: #FFF8F5;
+            color: #49383D;
+            border: 2px solid #EFB8C8;
+            box-sizing: border-box;
+            padding: 25px;
+            border-radius: 15px;
+
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 15px;
+        }
+
+        .cards h2 {
+            color: #9B526A;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .cards p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* CARD BUTTONS */
+
+        .cards button {
+            background-color: #ef95ae;
+            color: #9B526A;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+
+            font-family: cursive;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+
+        @media only screen and (max-width: 600px) {
+
+            * {
+                font-size: 12px;
+            }
+
+            body {
+                background-color: #FCE4EC;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .sampleNav {
+                padding: 10px;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .sampleNav > button {
+                padding: 8px;
+            }
+
+            .welcome h1 {
+                font-size: 3rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="sampleNav">
+        <button>Home</button>
+        <button>Girl Advice</button>
+        <button>Becoming Her</button>
+        <button>About</button>
+    </nav>
+
+    <!-- WELCOME SECTION -->
+
+    <div class="welcome">
+        <h1>Girl Talk ♡</h1>
+        <p>A little corner of the internet dedicated to growing, glowing, and becoming her.</p>
+    </div>
+
+    <!-- MAIN GRID -->
+
+    <!-- MAIN GRID -->
+
+<div class="cards">
+
+    <div>
+        <div>
+            <h2>Girl Advice ♡</h2>
+            <p>A little advice for the girl figuring out life, love, friendships, and everything in between.</p>
+        </div>
+
+        <button>Right Here</button>
+    </div>
+
+    <div>
+        <div>
+            <h2>Becoming Her ♡</h2>
+            <p>Your journey to becoming the happiest, healthiest, and most confident version of yourself starts here.</p>
+        </div>
+
+        <button>Right Here</button>
+    </div>
+
+    <div>
+        <div>
+            <h2>Self-Care Corner ♡</h2>
+            <p>A space for skincare, wellness, healthy habits, and taking time to care for yourself.</p>
+        </div>
+
+        <button>Right Here</button>
+    </div>
+
+    <div>
+        <div>
+            <h2>Confidence & Growth ♡</h2>
+            <p>You are that girl. You are enough. You are worthy.</p>
+        </div>
+
+        <button>Right Here</button>
+    </div>
+
+</div>
+
+</body>
+</html>

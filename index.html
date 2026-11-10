@@ -1,67 +1,219 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nina's Portfolio</title>
+    <title>Girl Talk</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap');
+
+        * {
+            font-size: 16px;
+        }
+
+        body {
+            background-color: #FCE4EC;
+            color: #49383D;
+        }
+
+        /* NAVIGATION BAR */
+
+        .sampleNav {
+            background-color: #EFB8C8;
+            color: #49383D;
+            font-size: 1.2rem;
+            width: 100vw;
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-sizing: border-box;
+
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+
+        .sampleNav > button {
+            background-color: #FFF8F5;
+            color: #9B526A;
+            border: 2px solid #F4BFD0;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+
+            font-family: cursive;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* WELCOME SECTION */
+
+        .welcome {
+            text-align: center;
+            padding: 100px 20px 40px;
+        }
+
+        .welcome h1 {
+            font-size: 4rem;
+            color: #9B526A;
+        }
+
+        .welcome p {
+            font-size: 1.2rem;
+            color: #ad6279;
+        }
+
+        /* MAIN GRID */
+
+        .cards {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+        }
+
+        .cards > div {
+            background-color: #FFF8F5;
+            color: #49383D;
+            border: 2px solid #EFB8C8;
+            box-sizing: border-box;
+            padding: 25px;
+            border-radius: 15px;
+
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 15px;
+        }
+
+        .cards h2 {
+            color: #9B526A;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .cards p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* CARD BUTTONS */
+
+        .cards button {
+            background-color: #ef95ae;
+            color: #9B526A;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+
+            font-family: cursive;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+
+        @media only screen and (max-width: 600px) {
+
+            * {
+                font-size: 12px;
+            }
+
+            body {
+                background-color: #FCE4EC;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .sampleNav {
+                padding: 10px;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .sampleNav > button {
+                padding: 8px;
+            }
+
+            .welcome h1 {
+                font-size: 3rem;
+            }
+
+        }
+
     </style>
 
-    <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body style="background-image: url('./portfolio/assets/css-pattern-by-magicpattern-.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+<body>
 
-    <header>Nina's Portfolio</header>
+    <!-- NAVIGATION BAR -->
 
-    <div class="title">Let's learn a little about me..</div>
+    <nav class="sampleNav">
+        <button>Home</button>
+        <button>Girl Advice</button>
+        <button>Becoming Her</button>
+        <button>About</button>
+    </nav>
 
-    <div class="Howdy">
-        <h2> Howdy, I'm Nina!</h2>
+    <!-- WELCOME SECTION -->
 
-        <div class="cards">
+    <div class="welcome">
+        <h1>Girl Talk ♡</h1>
+        <p>A little corner of the internet dedicated to growing, glowing, and becoming her.</p>
+    </div>
 
-            <div>
-                <h3>Learning how I fit into Design</h3>
-                <p>I'm passionate about understanding how design principles apply to real-world scenarios.</p>
+    <!-- MAIN GRID -->
 
-                <img src="./portfolio/assets/1.jpg" alt="My design work">
-                <img src="./portfolio/assets/lumen print.png" alt="My design work">
-            </div>
+    <!-- MAIN GRID -->
 
-            <div>
-                <h3>Student/Barista</h3>
-                <p>I work basically everyday at a starbucks near me! At night in the wee hours of the night I'm up trying to accomplish homework.</p>
-                <img src="./portfolio/assets/drink order.jpeg" alt="My work at Starbucks">
-                <img src="./portfolio/assets/UnicornFrap.jpeg" alt="My work at Starbucks">
-            </div>
+<div class="cards">
 
-            <div>
-                <h3>Doggie Mutha</h3>
-                <p>When I get home from work, I love to play with my dogs!</p>
-                 <img src="./portfolio/assets/Lexi.jpeg" alt="My work at Starbucks">
-                <img src="./portfolio/assets/willow.jpeg" alt="My work at Starbucks">
-            </div>
-
+    <div>
+        <div>
+            <h2>Girl Advice ♡</h2>
+            <p>A little advice for the girl figuring out life, love, friendships, and everything in between.</p>
         </div>
+
+        <button>Right Here</button>
     </div>
 
-    <div class="education">
-        <h2>EDUCATION HISTORY</h2>
+    <div>
+        <div>
+            <h2>Becoming Her ♡</h2>
+            <p>Your journey to becoming the happiest, healthiest, and most confident version of yourself starts here.</p>
+        </div>
 
-        <ul>
-            <li><span class="year">2023</span> Odyssey Online Learning</li>
-            <li><span class="year">2025</span> UNIVERSITY OF ARIZONA. Bachelor's degree for Media Arts and Sciences</li>
-        </ul>
+        <button>Right Here</button>
     </div>
 
-    <footer>
-        <h2>DO NOT contact me! LOL! I'm always sleeping or working!!</h2>
-    </footer>
+    <div>
+        <div>
+            <h2>Self-Care Corner ♡</h2>
+            <p>A space for skincare, wellness, healthy habits, and taking time to care for yourself.</p>
+        </div>
+
+        <button>Right Here</button>
+    </div>
+
+    <div>
+        <div>
+            <h2>Confidence & Growth ♡</h2>
+            <p>You are that girl. You are enough. You are worthy.</p>
+        </div>
+
+        <button>Right Here</button>
+    </div>
+
+</div>
 
 </body>
 </html>
-
